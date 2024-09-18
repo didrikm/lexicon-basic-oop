@@ -24,5 +24,14 @@ public class Program()
             System.Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.ForegroundColor = ConsoleColor.Green;
         }
+
+        List<UserError> userErrors = new();
+        userErrors.Add(new NumericInputError());
+        userErrors.Add(new TextInputError());
+
+        foreach (var error in userErrors)
+        {
+            System.Console.WriteLine(error.UEMessage());
+        }
     }
 }
