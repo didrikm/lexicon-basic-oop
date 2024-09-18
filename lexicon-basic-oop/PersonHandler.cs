@@ -10,10 +10,14 @@ public class PersonHandler
         double weight
     )
     {
-        Person p = new Person { FirstName = fname, LastName = lname };
-        p.Age = age;
-        p.Height = height;
-        p.Weight = weight;
+        Person p = new Person
+        {
+            FirstName = fname,
+            LastName = lname,
+            Age = age,
+            Height = height,
+            Weight = weight,
+        };
         return p;
     }
 
