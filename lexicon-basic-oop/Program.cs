@@ -14,9 +14,9 @@ public class Program()
             PersonHandler.SetAge(newPerson, 36);
             System.Console.WriteLine(newPerson.ToString());
         }
-        catch
+        catch (Exception ex)
         {
-            System.Console.WriteLine("Exception"); //ToDo: Fixa bättre exception
+            System.Console.WriteLine($"Exception occurred: {ex.Message}");
         }
     }
 }
