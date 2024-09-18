@@ -11,10 +11,12 @@ public class Program()
         {
             Person newPerson = PersonHandler.CreatePerson(35, "Didrik", "Molinder", 188, 75);
             System.Console.WriteLine(newPerson.ToString());
+            PersonHandler.SetAge(newPerson, 36);
+            System.Console.WriteLine(newPerson.ToString());
         }
         catch
         {
-            System.Console.WriteLine("Exception");
+            System.Console.WriteLine("Exception"); //ToDo: Fixa bättre exception
         }
     }
 }

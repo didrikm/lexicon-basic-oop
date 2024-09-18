@@ -16,4 +16,9 @@ public class PersonHandler
         p.Weight = weight;
         return p;
     }
+
+    public static void SetAge(Person pers, int age)
+    {
+        pers.Age = age;
+    }
 }

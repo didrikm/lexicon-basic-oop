@@ -45,7 +45,7 @@ public class Person
                 lName = value;
             else
                 throw new ArgumentException(
-                    "Last name must be at least 2 characters and at most 10 characters."
+                    "Last name must be at least 3 characters and at most 15 characters."
                 );
         }
     }
@@ -60,6 +60,11 @@ public class Person
     {
         get { return weight; }
         set { weight = value; }
+    }
+
+    public override string ToString()
+    {
+        return $"First name: {fName}\nLast name: {lName}\nAge: {age}\nHeight: {height}\nWeight: {weight}";
     }
 
     // public Person
