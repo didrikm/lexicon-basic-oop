@@ -9,6 +9,7 @@ public class Person
     private string lName;
     private double height;
     private double weight;
+    private string healthStatus = "Undiscovered tumor";
 
     public int Age
     {
@@ -62,9 +63,15 @@ public class Person
         set { weight = value; }
     }
 
+    public string HealthStatus
+    {
+        get { return healthStatus; }
+        set { healthStatus = value; }
+    }
+
     public override string ToString()
     {
-        return $"First name: {fName}\nLast name: {lName}\nAge: {age}\nHeight: {height}\nWeight: {weight}";
+        return $"First name: {fName}\nLast name: {lName}\nAge: {age}\nHeight: {height}\nWeight: {weight}\nHealth status: {healthStatus}";
     }
 
     // public Person

@@ -21,4 +21,9 @@ public class PersonHandler
     {
         pers.Age = age;
     }
+
+    public static void Operate(Person pers)
+    {
+        pers.HealthStatus = "Recovering from surgery";
+    }
 }
