@@ -6,8 +6,8 @@ public class Bird : Animal
 
     public int WingSpan
     {
-        get { return WingSpan; }
-        set { WingSpan = value; }
+        get { return wingSpan; }
+        set { wingSpan = value; }
     }
 
     public Bird(string name, int age, double weight, int wingspan)

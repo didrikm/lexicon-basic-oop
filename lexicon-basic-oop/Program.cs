@@ -80,7 +80,11 @@ public class Program()
 
         System.Console.WriteLine();
 
-        try { }
+        try
+        {
+            Pelican pelican = new("Pelle", 2, 15, 192, 13.2);
+            System.Console.WriteLine(pelican.BeakVolume);
+        }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
