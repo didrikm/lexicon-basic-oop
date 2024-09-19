@@ -1,4 +1,6 @@
-﻿namespace lexicon_basic_oop;
+﻿using System.Runtime.InteropServices;
+
+namespace lexicon_basic_oop;
 
 public class Program()
 {
@@ -85,6 +87,21 @@ public class Program()
         {
             Pelican pelican = new("Pelle", 2, 15, 192, 13.2);
             System.Console.WriteLine(pelican.BeakVolume);
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            System.Console.WriteLine($"Exception occurred: {ex.Message}");
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        System.Console.WriteLine();
+
+        try
+        {
+            WolfMan wolfman = new WolfMan("John Talbot", 55, 70, "Alpha");
+            wolfman.Talk();
+            System.Console.WriteLine(wolfman.ToString());
         }
         catch (Exception ex)
         {
