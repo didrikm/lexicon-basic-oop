@@ -1,4 +1,4 @@
-namespace lexicon_basic_oop;
+namespace lexicon_basic_oop.UserErrors;
 
 public class NumericInputError : UserError
 {

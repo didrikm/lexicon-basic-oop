@@ -1,4 +1,4 @@
-namespace lexicon_basic_oop;
+namespace lexicon_basic_oop.Animals;
 
 public abstract class Animal
 {

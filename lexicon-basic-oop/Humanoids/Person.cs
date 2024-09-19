@@ -1,6 +1,4 @@
-using System.Security.Cryptography;
-
-namespace lexicon_basic_oop;
+namespace lexicon_basic_oop.Humanoids;
 
 public class Person
 {

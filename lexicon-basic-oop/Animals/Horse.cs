@@ -1,6 +1,4 @@
-using System.Drawing;
-
-namespace lexicon_basic_oop;
+namespace lexicon_basic_oop.Animals;
 
 public class Horse : Animal
 {

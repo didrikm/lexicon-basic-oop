@@ -5,6 +5,7 @@ public class Program()
     public static void Main()
     {
         Console.ForegroundColor = ConsoleColor.Green;
+        Console.Clear();
 
         //Person p = new Person { FirstName = "Didrik", LastName = "Molinder" };
         //p.fName = "didrik";
