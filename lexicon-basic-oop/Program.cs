@@ -110,5 +110,30 @@ public class Program()
         }
 
         System.Console.WriteLine();
+
+        try
+        {
+            List<Animal> animals = new List<Animal>();
+            animals.Add(new Worm("Marre", 1, 0.05, 8.2));
+            animals.Add(new Dog("Fifi", 2, 8, "Dachshund"));
+            animals.Add(new Hedgehog("Frank", 3, 2.5, 500));
+            animals.Add(new WolfMan("Cooper", 27, 83, "Omega"));
+
+            foreach (var animal in animals)
+            {
+                System.Console.WriteLine(animal.GetType());
+                animal.DoSound();
+                if (animal is IPerson iperson)
+                    iperson.Talk();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            System.Console.WriteLine($"Exception occurred: {ex.Message}");
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        System.Console.WriteLine();
     }
 }
