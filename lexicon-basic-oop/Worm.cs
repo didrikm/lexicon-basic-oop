@@ -1,3 +1,5 @@
+namespace lexicon_basic_oop;
+
 public class Worm : Animal
 {
     public Worm(string name, int age, double weight)

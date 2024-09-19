@@ -1,3 +1,5 @@
+namespace lexicon_basic_oop;
+
 public class Wolf : Animal
 {
     public Wolf(string name, int age, double weight)

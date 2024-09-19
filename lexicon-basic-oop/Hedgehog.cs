@@ -1,3 +1,5 @@
+namespace lexicon_basic_oop;
+
 public class Hedgehog : Animal
 {
     public Hedgehog(string name, int age, double weight)

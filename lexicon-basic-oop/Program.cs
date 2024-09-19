@@ -17,6 +17,10 @@ public class Program()
             //Person badPerson = PersonHandler.CreatePerson(0, "Some", "Guy", 0, 0);//För att testa exception handling
             PersonHandler.Operate(newPerson);
             System.Console.WriteLine(newPerson.ToString());
+            Horse h = new("Dusty", 8, 400, "Palomino");
+            h.DoSound();
+            h.Prance();
+            System.Console.WriteLine(h.ToString());
         }
         catch (Exception ex)
         {
