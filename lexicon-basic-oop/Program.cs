@@ -8,10 +8,7 @@ public class Program()
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Clear();
-
-        //Person p = new Person { FirstName = "Didrik", LastName = "Molinder" };
-        //p.fName = "didrik";
-        //Går inte eftersom private
+        //F 1: Man kommer åt props i och med get, men inte de privata fälten direkt
 
         try
         {
@@ -102,6 +99,8 @@ public class Program()
             WolfMan wolfman = new WolfMan("John Talbot", 55, 70, "Alpha");
             wolfman.Talk();
             System.Console.WriteLine(wolfman.ToString());
+            //F 13: i Bird.cs
+            //F 14: i Animal.cs
         }
         catch (Exception ex)
         {

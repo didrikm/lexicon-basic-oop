@@ -29,6 +29,11 @@ public class Dog : Animal
         System.Console.WriteLine("*fetches newspaper*");
     }
 
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, breed: {Breed}";
+    }
+
     public override string ToString()
     {
         return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Breed: {Breed}";

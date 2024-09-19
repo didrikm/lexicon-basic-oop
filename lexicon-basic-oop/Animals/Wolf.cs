@@ -33,4 +33,9 @@ public class Wolf : Animal
     {
         System.Console.WriteLine("*stalks prey*");
     }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, pack status: {PackStatus}";
+    }
 }

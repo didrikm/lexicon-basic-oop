@@ -33,4 +33,9 @@ public class Horse : Animal
     {
         System.Console.WriteLine("*prances*");
     }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, color: {Color}";
+    }
 }

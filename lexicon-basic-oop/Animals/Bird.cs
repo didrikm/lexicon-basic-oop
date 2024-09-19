@@ -33,4 +33,9 @@ public class Bird : Animal
     {
         System.Console.WriteLine("*flaps wings*");
     }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, wing span: {WingSpan}";
+    }
 }

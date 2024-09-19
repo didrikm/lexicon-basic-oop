@@ -23,6 +23,7 @@ public abstract class Animal
     }
 
     public abstract void DoSound();
+    public abstract string Stats();
 
     public Animal(string name, int age, double weight)
     {

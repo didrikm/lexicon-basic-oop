@@ -33,4 +33,9 @@ public class Worm : Animal
     {
         return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Length: {Length}";
     }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, length: {Length}";
+    }
 }

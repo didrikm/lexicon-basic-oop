@@ -29,6 +29,11 @@ public class Hedgehog : Animal
         System.Console.WriteLine("*scurries away*");
     }
 
+    public override string Stats()
+    {
+        return $"Name: {Name}, Age: {Age}, weight: {Weight}, number of spines: {NumberOfSpines}";
+    }
+
     public override string ToString()
     {
         return $"Name: {Name}, Age: {Age}, Weight: {Weight}kg, Number of Spines: {numberOfSpines}";
