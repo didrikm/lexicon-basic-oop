@@ -25,6 +25,9 @@ public class Program()
             System.Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.ForegroundColor = ConsoleColor.Green;
         }
+
+        System.Console.WriteLine();
+
         try
         {
             Person badPerson = PersonHandler.CreatePerson(0, "Some", "Guy", 0, 0);
@@ -35,11 +38,17 @@ public class Program()
             System.Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.ForegroundColor = ConsoleColor.Green;
         }
+
+        System.Console.WriteLine();
+
         try
         {
             List<UserError> userErrors = new();
             userErrors.Add(new NumericInputError());
             userErrors.Add(new TextInputError());
+            userErrors.Add(new WetSocksError());
+            userErrors.Add(new BadPunError());
+            userErrors.Add(new SegFaultError());
 
             foreach (var error in userErrors)
             {
@@ -52,6 +61,9 @@ public class Program()
             System.Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.ForegroundColor = ConsoleColor.Green;
         }
+
+        System.Console.WriteLine();
+
         try
         {
             Horse h = new("Dusty", 8, 400, "Palomino");
@@ -65,5 +77,17 @@ public class Program()
             System.Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.ForegroundColor = ConsoleColor.Green;
         }
+
+        System.Console.WriteLine();
+
+        try { }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            System.Console.WriteLine($"Exception occurred: {ex.Message}");
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        System.Console.WriteLine();
     }
 }
