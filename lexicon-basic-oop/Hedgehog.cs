@@ -2,12 +2,21 @@ namespace lexicon_basic_oop;
 
 public class Hedgehog : Animal
 {
-    public Hedgehog(string name, int age, double weight)
+    private int numberOfSpines;
+
+    public Hedgehog(string name, int age, double weight, int numberOfSpines)
         : base(name, age, weight)
     {
         Name = name;
         Age = age;
         Weight = weight;
+        NumberOfSpines = numberOfSpines;
+    }
+
+    public int NumberOfSpines
+    {
+        get { return numberOfSpines; }
+        set { numberOfSpines = value; }
     }
 
     public override void DoSound()
@@ -18,5 +27,10 @@ public class Hedgehog : Animal
     public void Scurry()
     {
         System.Console.WriteLine("*scurries away*");
+    }
+
+    public override string ToString()
+    {
+        return $"Name: {Name}, Age: {Age}, Weight: {Weight}kg, Number of Spines: {numberOfSpines}";
     }
 }
