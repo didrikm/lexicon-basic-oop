@@ -99,6 +99,15 @@ public class Program()
         foreach (var animal in animals)
         {
             System.Console.WriteLine(animal.Stats());
+            //F 3.4.13: den loopar igenom och anropar metoden Stats på varje instans i animals
+        }
+
+        System.Console.WriteLine();
+
+        foreach (var animal in animals)
+        {
+            if (animal is Dog dog)
+                System.Console.WriteLine(animal.Stats());
         }
 
         System.Console.WriteLine();
