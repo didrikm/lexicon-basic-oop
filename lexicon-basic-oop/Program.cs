@@ -107,7 +107,12 @@ public class Program()
         foreach (var animal in animals)
         {
             if (animal is Dog dog)
-                System.Console.WriteLine(animal.Stats());
+            {
+                System.Console.WriteLine(dog.Stats());
+                dog.Fetch();
+                //F 3.4.17: för innehållet i listan hanteras som instanser av basklassen och
+                // måste castas till subklass innan man kan komma åt subklass-metoderna
+            }
         }
 
         System.Console.WriteLine();
